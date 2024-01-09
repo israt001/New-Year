@@ -40,14 +40,14 @@ header{
 }
 
 .banner{
-    position: relative;
-    min-width:auto;
-    min-height: 610px;
+    position:relative;
+    height: 500px;
     margin: 50px 140px;
-    background-image: linear-gradient(180deg, #070211 0%, rgba(65, 60, 77, 0) 100%), url(resources/Banner\ Image.png);
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0)), url(resources/Banner\ Image.png);
     border-radius: 16px;
     background-repeat: no-repeat;
     background-size:cover;
+    background-position: center;
     color: #FFF;
     text-align: center;
     font-family: 'Merriweather', serif;
@@ -78,10 +78,7 @@ margin: 20px auto;
 /* Body Section-1 */
 
 .section1 img{
-    display: flex;
-    width: 802.9px;
-height: 500px;
-flex-shrink: 0;
+    text-align: center;
     padding: 50px 260px 120px;
     
 }
