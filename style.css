@@ -35,25 +35,31 @@
 
 /* header part*/
 
-.banner img{
-    width: 100%;
-    filter: brightness(60%) contrast(100%);
+header{
+    text-align: center;
 }
 
 .banner{
-    display: flex;
-    align-items: center;
-    justify-content: center;
     position: relative;
-}
-.banner-content{
-    position: absolute;
+    min-width:auto;
+    min-height: 610px;
+    margin: 50px 140px;
+    background-image: linear-gradient(180deg, #070211 0%, rgba(65, 60, 77, 0) 100%), url(resources/Banner\ Image.png);
+    border-radius: 16px;
+    background-repeat: no-repeat;
+    background-size:cover;
     color: #FFF;
     text-align: center;
     font-family: 'Merriweather', serif;
-    
+    overflow: hidden;
 }
 
+.banner-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 .banner-title{
     font-size: 32px;
     font-weight: 400;   
@@ -63,6 +69,7 @@
 font-size: 72px;
 font-weight: 900;
 width: 800px;
+margin: 20px auto;
 }
 
 
@@ -71,7 +78,10 @@ width: 800px;
 /* Body Section-1 */
 
 .section1 img{
-    width:60%;
+    display: flex;
+    width: 802.9px;
+height: 500px;
+flex-shrink: 0;
     padding: 50px 260px 120px;
     
 }
@@ -114,7 +124,8 @@ padding-top: 140px;
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0)), url(resources/Vectorrr.png);
     background-repeat: no-repeat;
     background-size: cover;
-    margin-bottom: 120px;
+    margin: 0px 140px 120px;
+    border-radius: 25px;
 }
 
 .section2-all-content{
@@ -159,6 +170,9 @@ padding-top: 140px;
 
 
 /* section3 */
+.sec3{
+    padding: 0px 140px 120px;
+}
 
 #place{
     color: #F00;
@@ -170,12 +184,12 @@ padding-top: 140px;
     font-size: 32px;
     font-weight: 650;
     line-height: 56px;
-    text-transform: capitalize;
     text-align: center;
     padding-top: 120px;
     background: linear-gradient(to top,rgb(255, 255, 255), rgb(252, 233, 233));
     height: 350px;
-    width: 100%;
+    border:140px;
+    border-radius: 20px;
 }
 
 .section3-text{
@@ -199,18 +213,20 @@ padding-top: 140px;
 
 /* section 4 */
 
+.sec4{
+    margin: 0px 120px;
+}
+
 .section4{
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 80px;
-    margin-top: 160px;
 }
 
 .section4-left{
     text-align: left;
-    height: 240px;
-    width: 390px;
+    max-width: px;
 }
 
 .section4-left p{
@@ -239,7 +255,6 @@ padding-top: 140px;
 }
 
 .section4-right p{
-    width: 276px;
     padding-bottom: 30px;
 }
 
@@ -255,8 +270,7 @@ padding-top: 140px;
 
 .section5{
     text-align: center;
-    display:block;
-    margin-top: 120px;
+    margin: 120px 140px 0px;
 }
 
 .section5-functional{
@@ -275,7 +289,7 @@ padding-top: 140px;
 }
 
 .section5 p{
-    margin-top: 15px;
+    margin: 15px 60px 0px;
 
 }
 
@@ -290,7 +304,7 @@ padding-top: 140px;
 }
 
 .section7-text{
-    padding-left: 20px;
+    padding: 0px 140px 12px;
 }
 
 .section7-text-heading{
@@ -310,15 +324,18 @@ padding-top: 140px;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    flex-direction: row;
 }
 
 .for-img-section7{
-    padding:10px;
+    box-sizing: border-box;
+    padding: 12px;
+    width: 33.33%;
+    height: 30%;
 }
 
 .section7-down{
-    padding-top: 40px;
+    padding: 0px 128px;
+    box-sizing: border-box;
 }
 
 
@@ -326,66 +343,71 @@ padding-top: 140px;
 
 /*  section  8*/
 .section8{
-    padding: 120px 20px 120px;
+    padding: 120px 140px;
+    box-sizing: border-box;
+    
 }
 .section8-text{
+    justify-content: center;
     text-align: center;
-    display: block;
     background: rgba(255, 0, 0, 0.05);
-    width: 1310px;
-    height: 600px;
+    width: 100%;
+    height: 616px;
     border-radius: 16px;
-    box-sizing: border-box;
+   
 }
 
 .section8-text img{
     padding-top: 80px;
 }
 
-.section8>.section8-text p{
-    margin: 0px 212px;
-    width: 896px;
+.section8-text p{
+    padding: 0px 212px;
 }
 
-.subscribe{
-    position: absolute;
-    margin: 48px 336px 80px;
+.container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
 }
 
-input{
-    position: relative;
-    display: inline-block;
-    font-family: Inter;
-    box-sizing: border-box;
-}
-
-input[type="text"]{
-    background-color: #FFF;
-    width: 438px;
+form{
+    width: 648px;
     height: 72px;
-    border: none;
-    padding: 0 25px;
-    border-radius: 50px 0 0 50px;
-    font-size: 18px;
-    outline: none;
+    display: flex;
 }
+form input{
+    flex: 1;
+    border: none;
+    outline: none; 
+    border-radius: 50px;
+    background: #FFF;
+    border-radius: 50px 0px 0px 50px;
+    padding-left: 40px;
+    font-size: 18px;
+    font-family: Inter;
+ }
 
-input[type="submit"]{
-    position: relative;
-    left: -50px;
-    border-radius: 0 50px 50px 0;
+form button{
+    border-radius: 0px 50px 50px 0px;
+    background: #F00;
+    padding: 10px 50px;
+    outline: none;
+    border: none;
+    color: #FFF ;
+    cursor: pointer;
     width: 210px;
     height: 72px;
-    background-color: #F00;
-    border: none;
-    cursor: pointer;
-    color: #FFF;
+    font-family: Inter;
     font-size: 20px;
+
+}
+form button:hover{
+    background-color: rgb(255, 65, 65);
 }
 
-input[type="submit"]:hover{
-    background-color: rgb(247, 73, 73);
-}
 
 .section8-text>.primary-description{
     padding-top: 22px;
@@ -402,14 +424,12 @@ input[type="submit"]:hover{
 
 .part1{
     display: flex;
-    gap: 560px ;
-    padding-top: 120px;
-    padding-left: 140px;
-    padding-bottom: 50px;
+    justify-content: space-between;
+    padding: 120px 140px 20px;
 }
 .footer{
     background-color: #070211;
-    width: 1600px;
+    width: 100%px;
     height: 610px;
 }
 
@@ -452,8 +472,10 @@ input[type="submit"]:hover{
 .part2{
     margin: 0px 140px;
     display: flex;
+    justify-content: center;
+    align-items: center;
     border: 0.5px ridge rgba(255, 255, 255, 0.15);
-    padding: 36px 488px;
+    padding: 36px 0px;
     border-left: 0;
     border-right: 0;
 }
@@ -461,7 +483,6 @@ input[type="submit"]:hover{
 .part3{
     display: flex;
     justify-content: space-between;
-    gap: 80px;
 
 }
 
